@@ -1,0 +1,70 @@
+@media (max-width: 1199px) {
+    .margem {
+      margin-top: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .priconteudo {
+        flex-direction: column;
+    }
+
+    .pricardconteudo {
+        width: 80%;
+        margin-top: 2.5rem;
+    }
+    
+    
+}
+
+@media (max-width: 992px) {
+    .texto {
+        font-size: 60px;
+    }
+
+    .top-n {
+        top: -12px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .texto {
+        font-size: 50px;
+    }
+    
+    .nossorobo {
+        flex-direction: column;
+    }
+
+    .top-n {
+        top: -10px;
+    }
+    
+}
+
+@media (max-width: 650px) {
+    .texto {
+        font-size: 40px;
+    }
+    
+    .top-n {
+        top: -5px;
+    }
+}
+
+
+  @media (max-width: 575px) {
+    .texto {
+      font-size: 30px;
+    }
+
+
+    .priconteudo {
+        padding: 0;
+    }
+
+    .imgbtn {
+        margin: 0 0 1.5rem 0 !important;
+        padding: .6rem .3rem .6rem .3rem !important;
+    }
+  }

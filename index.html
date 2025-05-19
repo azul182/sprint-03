@@ -1,0 +1,882 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sirius</title>
+
+  <!-- google fonts -->
+  <!-- lora -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400..700&display=swap" rel="stylesheet">
+  <!-- albert sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Chamada Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Chamada CSS -->
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- media queries -->
+  <link rel="stylesheet" href="./css/media.css">
+
+</head>
+
+<body>
+
+  <!-- começo do header -->
+  <!-- header start -->
+  <nav class="navbar navbar-expand-xl py-0" id="header">
+    <div class="container-fluid w-95 border rounded-5 py-1 mt-3">
+      <a href="#header">
+        <svg width="50" height="60" viewBox="0 0 60 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M15.6253 28.3545C14.5794 28.5577 13.5713 28.7566 12.6565 29.019C13.3294 29.2137 14.0678 29.3956 14.844 29.5861C18.7024 30.5341 23.4956 31.7106 25.9931 35.8328C26.6181 36.8696 27.107 37.5765 27.49 39.8914C15.4358 38.8461 6.32797 34.051 6.32797 28.2997C6.32797 27.2332 6.63796 26.2048 7.22263 25.223C2.74679 27.2121 0 29.908 0 32.8748C0 38.9945 11.6859 43.9551 26.1015 43.9551C26.7441 43.9551 27.3792 43.9466 28.0067 43.9255C28.8535 52.4364 28.8535 64.6419 28.856 73.9573C28.856 79.7724 28.856 84.4616 29.0626 86.4169C29.2693 84.4616 29.2693 79.7723 29.2693 73.953C29.2693 64.6041 29.2693 52.3395 30.1261 43.8236C39.501 43.2057 47.2282 41.5595 50.5095 37.8943C45.8169 39.9342 39.4481 40.0993 32.43 40.0993C31.8176 40.0993 31.2078 40.0908 30.6054 40.0739C30.991 37.67 31.49 36.8955 32.1327 35.8332C34.6277 31.7111 39.4211 30.5346 43.2792 29.5865C44.0554 29.3961 44.7938 29.2141 45.4692 29.0194C44.5518 28.757 43.5438 28.5581 42.4979 28.355C38.952 27.6694 34.9727 25.8156 32.6591 21.9898C32.0921 21.0545 31.636 19.9541 31.2654 18.7395C43.932 19.552 53.672 24.4741 53.672 30.4243C53.672 31.4866 53.362 32.5193 52.7774 33.4969C57.2532 31.5078 60 28.8161 60 25.8451C60 19.7296 48.3141 14.7647 33.8985 14.7647C32.7065 14.7647 31.5346 14.7986 30.3879 14.8663C29.9041 11.9461 29.6747 8.74662 29.463 5.73325C29.3395 4.00647 29.2211 2.33906 29.0623 0.823975C28.901 2.33906 28.7826 4.00658 28.6616 5.73325C28.4424 8.81856 28.208 12.1027 27.6989 15.0821C19.3143 15.9455 12.5149 18.5314 9.49041 21.9087C14.0293 19.9365 20.1434 18.7007 26.8925 18.6246C26.5144 19.8858 26.0482 21.0242 25.4635 21.9892C23.15 25.815 19.1712 27.6689 15.6253 28.3545Z"
+            fill="url(#paint0_linear_169_21)" />
+          <defs>
+            <linearGradient id="paint0_linear_169_21" x1="30" y1="0.823975" x2="30" y2="86.4169"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FE56CC" />
+              <stop offset="0.898333" stop-color="#2400C4" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto gap-4 mb-lg-0">
+          <li class="nav-item">
+            <a class=" link fw-medium nav-link active text-white header-link" aria-current="page" href="#ourRobot">Nosso
+              robô</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class=" link fw-medium nav-link dropdown-toggle text-white header-link" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Nossos componentes
+            </a>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item fw-medium contato-link text-light header-link dropdown-link"
+                  href="#ourWeapon">Nossa arma</a></li>
+              <li>
+                <hr class="dropdown-divider dropdown-line mx-auto contato-link ">
+              </li>
+              <li><a class="dropdown-item contato-link fw-medium text-light header-link dropdown-link"
+                  href="#ourHardware">Nosso hardware</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="link fw-medium nav-link contato-link text-white header-link" href="#ourAtts">Novas
+              atualizações</a>
+          </li>
+          <li class="nav-item">
+            <a class=" link fw-medium nav-link contato-link text-white header-link" href="#becomeMember">Torne-se
+              Sócio</a>
+          </li>
+        </ul>
+        <a class="nav-link fw-semibold text-white btn-cadastro header-link me-2 margem py-0" href="#">Cadastre-se</a>
+      </div>
+    </div>
+  </nav>
+  <!-- fim do header -->
+  <!-- header end -->
+
+  <!-- introdução -->
+  <!-- introduction -->
+  <main class="container-fluid my-5 px-5 d-flex priconteudo">
+    <section class="container-fluid">
+      <h1 class="text-white fw-semibold texto">O robô de alta performance<span class="gradient-sirius d-flex"
+          data-text="― Sirius">― Sirius</span></h1>
+      <p class="text-light fs-5 fw-normal text-wrap w-75">Projetado para velocidade, precisão e impacto, o Sirius
+        redefine as estratégias no torneio de combate entre robôs.</p>
+      <a class="btn-pink btn-plus border rounded-5 fw-semibold px-3 text-decoration-none mt-5" href="#">Encomende já<svg
+          class="ms-5" width="18" height="18" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12.0534 1.2345C12.0534 0.552952 11.4948 -1.13372e-05 10.8065 -1.13372e-05C10.1181 -1.13372e-05 9.55955 0.552952 9.55955 1.2345V9.46459H1.2469C0.558511 9.46459 0 10.0175 0 10.6991C0 11.3806 0.558511 11.9336 1.2469 11.9336H9.55955V20.1637C9.55955 20.8452 10.1181 21.3982 10.8065 21.3982C11.4948 21.3982 12.0534 20.8452 12.0534 20.1637V11.9336H20.366C21.0544 11.9336 21.6129 11.3806 21.6129 10.6991C21.6129 10.0175 21.0544 9.46459 20.366 9.46459H12.0534V1.2345Z"
+            fill="currentcolor" />
+        </svg>
+      </a>
+    </section>
+    <article
+      class="container-fluid border bd-pink rounded-4 w-40 d-flex flex-column bg-black bg-opacity-25 px-4 text-start py-1 align-items-start pricardconteudo">
+      <h3 class="text-white my-4 d-flex flex-column fw-semibold">Porquê escolher <span class="text-pink">― Sirius</span>
+      </h3>
+      <h3 class="text-pink fs-2 fw-light d-inline-flex align-items-center m-0">20<svg class="ms-1" width="19"
+          height="19" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12.0534 1.2345C12.0534 0.552952 11.4948 -1.13372e-05 10.8065 -1.13372e-05C10.1181 -1.13372e-05 9.55955 0.552952 9.55955 1.2345V9.46459H1.2469C0.558511 9.46459 0 10.0175 0 10.6991C0 11.3806 0.558511 11.9336 1.2469 11.9336H9.55955V20.1637C9.55955 20.8452 10.1181 21.3982 10.8065 21.3982C11.4948 21.3982 12.0534 20.8452 12.0534 20.1637V11.9336H20.366C21.0544 11.9336 21.6129 11.3806 21.6129 10.6991C21.6129 10.0175 21.0544 9.46459 20.366 9.46459H12.0534V1.2345Z"
+            fill="currentcolor" />
+        </svg></h3>
+      <p class="text-light fw-lighter fs-6 mb-5 text-wrap w-75">DESENVOLVENDO +20 ATUALIZAÇÕES POR ANO. </p>
+      <h3 class="text-pink fs-2 fw-light d-inline-flex align-items-center m-0">10<svg class="ms-1" width="19"
+          height="19" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12.0534 1.2345C12.0534 0.552952 11.4948 -1.13372e-05 10.8065 -1.13372e-05C10.1181 -1.13372e-05 9.55955 0.552952 9.55955 1.2345V9.46459H1.2469C0.558511 9.46459 0 10.0175 0 10.6991C0 11.3806 0.558511 11.9336 1.2469 11.9336H9.55955V20.1637C9.55955 20.8452 10.1181 21.3982 10.8065 21.3982C11.4948 21.3982 12.0534 20.8452 12.0534 20.1637V11.9336H20.366C21.0544 11.9336 21.6129 11.3806 21.6129 10.6991C21.6129 10.0175 21.0544 9.46459 20.366 9.46459H12.0534V1.2345Z"
+            fill="currentcolor" />
+        </svg></h3>
+      <p class="text-light fs-6 mb-5 text-wrap w-75 fw-lighter">TRAZENDO +10 HORAS DE DURAÇÃO DE BATERIA.</p>
+      <h3 class="text-pink fs-2 fw-light d-inline-flex align-items-center m-0">300<svg class="ms-1" width="19"
+          height="19" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12.0534 1.2345C12.0534 0.552952 11.4948 -1.13372e-05 10.8065 -1.13372e-05C10.1181 -1.13372e-05 9.55955 0.552952 9.55955 1.2345V9.46459H1.2469C0.558511 9.46459 0 10.0175 0 10.6991C0 11.3806 0.558511 11.9336 1.2469 11.9336H9.55955V20.1637C9.55955 20.8452 10.1181 21.3982 10.8065 21.3982C11.4948 21.3982 12.0534 20.8452 12.0534 20.1637V11.9336H20.366C21.0544 11.9336 21.6129 11.3806 21.6129 10.6991C21.6129 10.0175 21.0544 9.46459 20.366 9.46459H12.0534V1.2345Z"
+            fill="currentcolor" />
+        </svg></h3>
+      <p class="text-light fs-6 text-wrap w-75 fw-lighter">MOTOR QUE ULTRAPASSA +300RPM.</p>
+    </article>
+  </main>
+
+  <!-- Nosso robô conteúdo -->
+  <!-- Our robot content -->
+  <main class="bg-content p-5 pb-0">
+    <section class="container-fluid mx-auto w-100 bg-light rounded-4 d-flex flex-column align-items-start"
+      id="ourRobot">
+      <h5 class=" border-top w-95 bd-purple ms-4 mt-4 fs-6 text-light-purple albert fw-semibold pt-2">NOSSO ROBÔ</h5>
+      <div class="d-flex align-items-center justify-content-between nossorobo">
+        <h3 class="albert text-wrap w-50 p-4 mb-0 fs-3">Equipado com um sistema de controle de alta precisão e uma
+          estrutura leve, Sirius atinge máxima eficiência na arena. Sua arma inovadora foi projetada para ataques
+          certeiros, garantindo vantagem no combate.</h3>
+        <img class="img-fluid pt-3 pe-lg-5" src="./img/nossoRobo.png"
+          alt="Imagem composta por fotos de reparo eletrônico. Uma mão soldando uma placa-mãe, um técnico manuseando circuitos e um close-up de um chip sendo instalado.">
+      </div>
+      <a class="btn-purple btn-plus border rounded-5 fw-semibold px-3 text-decoration-none align-self-start my-4 ms-4"
+        href="">Saiba mais<svg class="ms-5" width="18" height="18" viewBox="0 0 20 22" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11.1538 1.23451C11.1538 0.552963 10.637 0 10 0C9.36298 0 8.84615 0.552963 8.84615 1.23451V9.4646H1.15385C0.516831 9.4646 0 10.0176 0 10.6991C0 11.3807 0.516831 11.9336 1.15385 11.9336H8.84615V20.1637C8.84615 20.8453 9.36298 21.3982 10 21.3982C10.637 21.3982 11.1538 20.8453 11.1538 20.1637V11.9336H18.8462C19.4832 11.9336 20 11.3807 20 10.6991C20 10.0176 19.4832 9.4646 18.8462 9.4646H11.1538V1.23451Z"
+            fill="currentcolor" />
+        </svg>
+      </a>
+    </section>
+
+    <div class=" w-100 background-image container-fluid d-flex rounded-4 mt-5 mx-auto" style="height: 500px;"></div>
+    <div class="container-fluid bg-gradient-black text-light albert rounded-4 shadow text-center w-75">
+      <h3 class="py-4 fw-normal fs-3 text-wrap">Cada detalhe do Sirius foi projetado para oferecer resistência,
+        velocidade e precisão. Seu chassi leve permite alta mobilidade sem comprometer a durabilidade. O motor garante
+        respostas rápidas, enquanto o sistema de controle otimizado proporciona movimentos ágeis e estratégicos.</h3>
+
+      <a class="btn-purple btn-plus border rounded-5 fw-semibold px-3 text-decoration-none align-self-start mb-4 ms-4 imgbtn"
+        href="">Encomende já<svg class="ms-5" width="18" height="18" viewBox="0 0 20 22" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11.1538 1.23451C11.1538 0.552963 10.637 0 10 0C9.36298 0 8.84615 0.552963 8.84615 1.23451V9.4646H1.15385C0.516831 9.4646 0 10.0176 0 10.6991C0 11.3807 0.516831 11.9336 1.15385 11.9336H8.84615V20.1637C8.84615 20.8453 9.36298 21.3982 10 21.3982C10.637 21.3982 11.1538 20.8453 11.1538 20.1637V11.9336H18.8462C19.4832 11.9336 20 11.3807 20 10.6991C20 10.0176 19.4832 9.4646 18.8462 9.4646H11.1538V1.23451Z"
+            fill="currentcolor" />
+        </svg>
+      </a>
+    </div>
+  </main>
+
+  <h5 class="border-top w-75 bd-purple ms-4 fs-6 text-light-purple albert fw-semibold pt-2">NOSSOS COMPONENTES</h5>
+  <div class="container-fluid vh-30 d-flex flex-column justify-content-center">
+    <h1 class="text-white d-flex align-items-center flex-column lora fw-semibold fs-1">Tecnologia por dentro da
+      máquina<span class="gradient-sirius" data-text="cada peça feita para vencer">cada peça feita para vencer</span>
+    </h1>
+  </div>
+
+  <!-- carrossel -->
+  <main class="bg-content container-fluid p-5">
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicadores laterais -->
+      <div
+        class="carousel-indicators position-absolute top-50 start-0 translate-middle-y ps-2 ms-1 d-flex flex-column gap-2 z-3">
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0"
+          class="active rounded-circle mx-0 mb-1" aria-current="true" aria-label="Slide 1"
+          style="width: 12px; height: 12px;"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" class="rounded-circle mx-0 mt-1"
+          aria-label="Slide 2" style="width: 12px; height: 12px;"></button>
+      </div>
+
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <section class="container-fluid bg-gray rounded-3" id="ourWeapon">
+            <div class="row align-items-center">
+              <div class="col-12 col-md-4 ps-md-5 pe-md-0 pt-4">
+                <div class="text-start">
+                  <h1 class="text-white lora fw-bold m-0 fs-p">Nossa</h1>
+                </div>
+                <div class="text-end border-top border-2 bd-pink mb-2 carousel-text">
+                  <h1 class="gradient-sirius fw-bold top-n fs-p pt-4" data-text="arma">arma</h1>
+                </div>
+                <p class="text-light text-wrap fs-6 fw-normal mb-0">
+                  Quando não está em ação, a arma se posiciona como uma barreira integrada ao robô, mimetizando-se
+                  perfeitamente ao seu design. Seu mecanismo versátil e com uma estrutura reforçada criam uma defesa
+                  passiva permite:
+                </p>
+              </div>
+
+              <div class="col-12 col-md-8 p-3 p-md-5">
+                <div class="ratio ratio-16x9">
+                  
+                  <iframe width="364" height="646" src="https://www.youtube.com/embed/48g3jXPYB1s" title="Robô ativando a arma" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+
+            <div class="row p-4">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed mt-5 text-white" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Impenetrável
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body accordion-bg text-light">Nosso robô foi projetado para resistir a
+                      qualquer investida. Com uma carcaça robusta e proteção estratégica nos pontos vitais, ele se torna
+                      praticamente impenetrável durante o combate. Enquanto outros caem diante de um golpe certeiro, o
+                      nosso mantém-se firme, pronto para o contra-ataque. A bexiga pode até estar à mostra, mas chegar
+                      até ela será um verdadeiro desafio.</div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Design Único
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse accordion-bg"
+                    aria-labelledby="headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body text-light">Muito mais que uma máquina de combate, nosso robô é uma obra
+                      de engenharia criativa. Seu visual agressivo e aerodinâmico não é só estético — foi pensado para
+                      intimidação e eficiência. E o diferencial? Uma antena elétrica de carro que se transforma em uma
+                      arma precisa e flexível, capaz de alcançar pontos altos e estourar bexigas com agilidade
+                      cirúrgica. Um design original, ousado e funcional.</div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Resistência
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse accordion-bg"
+                    aria-labelledby="headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body text-light">Construído com materiais selecionados para aguentar pancadas,
+                      quedas e impactos diretos, o robô não se abala facilmente. Cada componente foi testado em
+                      condições extremas para garantir desempenho constante durante as batalhas. Seja empurrado,
+                      prensado ou cercado, ele continua operando com precisão. Durabilidade é sua maior armadura.</div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                      Peso
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse accordion-bg"
+                    aria-labelledby="headingFour" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body text-light">Leve o suficiente para manobras rápidas, pesado o bastante
+                      para manter estabilidade nas colisões. Encontramos o equilíbrio perfeito entre agilidade e força.
+                      O robô se move com velocidade, mas sem perder o chão — um fator decisivo quando milésimos de
+                      segundo podem definir a vitória. Peso bem distribuído para um desempenho superior em todos os
+                      momentos da luta.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <section class="container-fluid bg-gray rounded-3">
+            <div class="row align-items-center">
+              <div class="col-12 col-md-4 ps-md-5 pe-md-0 pt-4">
+                <div class="text-start carousel-text">
+                  <h1 class="text-white lora fw-bold m-0 fs-p">Nossa</h1>
+                </div>
+                <div class="text-end border-top border-2 bd-pink mb-2">
+                  <h1 class="gradient-sirius fw-bold top-n fs-p pt-5" data-text="arma">arma</h1>
+                </div>
+                <p class="text-light text-wrap fs-6 fw-normal mb-0">
+                  Com a ativação do sensor, o robô transforma a defesa em ataque. As lâminas projetam-se para frente,
+                  estourando o balão adversário antes mesmo da reação inimiga. Entenda mais abaixo:
+                </p>
+              </div>
+
+              <div class="col-12 col-md-8 p-3 p-md-5">
+                <div class="ratio ratio-16x9">
+                 <iframe width="364" height="646" src="https://www.youtube.com/embed/48g3jXPYB1s" title="Robô ativando a arma" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+
+            <div class="row p-4">
+              <div class="accordion accordion-flush" id="accordionFlushExampleS2">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOneS2">
+                    <button class="accordion-button collapsed mt-5 text-white" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOneS2" aria-expanded="false" aria-controls="flush-collapseOneS2">
+                      Letal
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOneS2" class="accordion-collapse collapse" aria-labelledby="headingOneS2"
+                    data-bs-parent="#accordionFlushExampleS2">
+                    <div class="accordion-body accordion-bg text-light">Não basta competir — é preciso dominar. O robô
+                      foi projetado com uma arma letal e estratégica: uma antena elétrica de carro transformada em um
+                      estilete de destruição, capaz de atingir a bexiga inimiga com precisão cirúrgica. Cada movimento é
+                      uma ameaça. Cada golpe, uma sentença.</div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwoS2">
+                    <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwoS2" aria-expanded="false" aria-controls="flush-collapseTwoS2">
+                      Precisão
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwoS2" class="accordion-collapse collapse accordion-bg"
+                    aria-labelledby="headingTwoS2" data-bs-parent="#accordionFlushExampleS2">
+                    <div class="accordion-body text-light">Velocidade sem controle é desperdício. Por isso, nosso robô
+                      alia sensores calibrados e controle responsivo para executar ataques com exatidão milimétrica. Ele
+                      não ataca por atacar — ele mira, calcula e acerta. A bexiga do oponente não tem chance.</div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThreeS2">
+                    <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThreeS2" aria-expanded="false"
+                      aria-controls="flush-collapseThreeS2">
+                      Autônomo
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThreeS2" class="accordion-collapse collapse accordion-bg"
+                    aria-labelledby="headingThreeS2" data-bs-parent="#accordionFlushExampleS2">
+                    <div class="accordion-body text-light">Muito além do controle remoto. Com funções autônomas básicas,
+                      o robô é capaz de executar movimentos estratégicos sem intervenção direta, interpretando o
+                      ambiente e reagindo de forma inteligente. Ele pensa por si, age com propósito e sabe onde deve
+                      estar antes mesmo que o adversário perceba.</div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFourS2">
+                    <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFourS2" aria-expanded="false" aria-controls="flush-collapseFourS2">
+                      Exclusivo
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFourS2" class="accordion-collapse collapse accordion-bg"
+                    aria-labelledby="headingFourS2" data-bs-parent="#accordionFlushExampleS2">
+                    <div class="accordion-body text-light">Nenhum robô é como este. Cada parte, cada traço, cada detalhe
+                      foi desenvolvido com originalidade e foco total em desempenho de combate. Não é um modelo genérico
+                      — é uma criação única, feita sob medida para vencer. Quando ele entra na arena, todos sabem: esse
+                      é o original.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- hardware -->
+    <section class="my-5 container-fluid bg-white rounded-3" id="ourHardware">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 ps-md-5 pe-md-0 pt-4">
+          <div class="text-start">
+            <h1 class="text-black lora fw-bold m-0 fs-p">Nosso</h1>
+          </div>
+          <div class="text-end w-100 w-md-75 border-top border-2 bd-pink mb-2">
+            <h1 class="gradient-sirius fw-bold top-n-1 fs-p" data-text="hardware">hardware</h1>
+          </div>
+          <p class="text-black text-wrap fs-6 fw-semibold w-100 w-md-95 mt-3 mb-0">
+            Cada componente do Sirius foi cuidadosamente selecionado para criar uma máquina de guerra compacta, poderosa
+            e inteligente. Essa é a engenharia que transforma Sirius em um Gladiador na Arena:
+          </p>
+        </div>
+
+        <div class="col-12 col-md-6 p-4 p-md-5">
+          <div class="ratio ratio-16x9">
+            <iframe width="364" height="646" src="https://www.youtube.com/embed/vsU7D-NWeU0" title="Robô em movimento" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="row p-4">
+        <div class="accordion accordion-flush" id="accordionFlushExampleHardware">
+
+          <div class="accordion-item hardware">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed mt-5 text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOneHardware" aria-expanded="false"
+                aria-controls="flush-collapseOneHardware">
+                Núcleo de Controle
+              </button>
+            </h2>
+            <div id="flush-collapseOneHardware" class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExampleHardware">
+              <div class="accordion-body accordion-bg-1 text-light">No coração da inteligência do robô, o Núcleo de
+                Controle garante decisões rápidas e precisas. Com uma central de comandos responsiva, ele interpreta
+                cada input com máxima eficiência, reagindo ao ambiente em tempo real. É como um cérebro eletrônico
+                pronto para a guerra — estratégico, ágil e implacável.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item hardware">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwoHardware" aria-expanded="false"
+                aria-controls="flush-collapseTwoHardware">
+                Sistema de Propulsão
+              </button>
+            </h2>
+            <div id="flush-collapseTwoHardware" class="accordion-collapse collapse accordion-bg-1 text-lightS2"
+              data-bs-parent="#accordionFlushExampleHardware">
+              <div class="accordion-body text-light">O que move o robô à frente da concorrência é seu sistema de
+                propulsão otimizado. Engrenagens precisas, rodas bem calibradas e distribuição de torque inteligente
+                garantem movimentos fluidos e evasivos. Cada avanço é calculado, cada curva é dominada. Velocidade e
+                controle andam lado a lado aqui.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item hardware">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThreeHardware" aria-expanded="false"
+                aria-controls="flush-collapseThreeHardware">
+                Coração Energético
+              </button>
+            </h2>
+            <div id="flush-collapseThreeHardware" class="accordion-collapse collapse accordion-bg-1 text-lightS2"
+              data-bs-parent="#accordionFlushExampleHardware">
+              <div class="accordion-body text-light">A fonte de toda a força. Nosso sistema energético foi pensado para
+                durar todo o combate sem perder potência. Baterias de alta performance e gerenciamento inteligente de
+                energia garantem que a arma esteja sempre pronta e que a mobilidade nunca falhe. É a pulsação constante
+                que mantém o robô vivo e letal.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item hardware">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFourHardware" aria-expanded="false"
+                aria-controls="flush-collapseFourHardware">
+                Conectividade Tática
+              </button>
+            </h2>
+            <div id="flush-collapseFourHardware" class="accordion-collapse collapse accordion-bg-1 text-lightS2"
+              data-bs-parent="#accordionFlushExampleHardware">
+              <div class="accordion-body text-light">Mais que um robô, um guerreiro conectado. A conectividade tática
+                permite comunicação precisa entre operador e máquina, com zero atraso. Controles responsivos, sinal
+                estável e feedback instantâneo transformam cada comando em ação direta. Em uma batalha onde cada segundo
+                conta, essa conexão é sua maior vantagem.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <div class="container-fluid vh-70 d-flex flex-column justify-content-center">
+    <div class="d-flex justify-content-center mb-4">
+      <svg width="100" height="90" viewBox="0 0 60 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M15.6253 28.3545C14.5794 28.5577 13.5713 28.7566 12.6565 29.019C13.3294 29.2137 14.0678 29.3956 14.844 29.5861C18.7024 30.5341 23.4956 31.7106 25.9931 35.8328C26.6181 36.8696 27.107 37.5765 27.49 39.8914C15.4358 38.8461 6.32797 34.051 6.32797 28.2997C6.32797 27.2332 6.63796 26.2048 7.22263 25.223C2.74679 27.2121 0 29.908 0 32.8748C0 38.9945 11.6859 43.9551 26.1015 43.9551C26.7441 43.9551 27.3792 43.9466 28.0067 43.9255C28.8535 52.4364 28.8535 64.6419 28.856 73.9573C28.856 79.7724 28.856 84.4616 29.0626 86.4169C29.2693 84.4616 29.2693 79.7723 29.2693 73.953C29.2693 64.6041 29.2693 52.3395 30.1261 43.8236C39.501 43.2057 47.2282 41.5595 50.5095 37.8943C45.8169 39.9342 39.4481 40.0993 32.43 40.0993C31.8176 40.0993 31.2078 40.0908 30.6054 40.0739C30.991 37.67 31.49 36.8955 32.1327 35.8332C34.6277 31.7111 39.4211 30.5346 43.2792 29.5865C44.0554 29.3961 44.7938 29.2141 45.4692 29.0194C44.5518 28.757 43.5438 28.5581 42.4979 28.355C38.952 27.6694 34.9727 25.8156 32.6591 21.9898C32.0921 21.0545 31.636 19.9541 31.2654 18.7395C43.932 19.552 53.672 24.4741 53.672 30.4243C53.672 31.4866 53.362 32.5193 52.7774 33.4969C57.2532 31.5078 60 28.8161 60 25.8451C60 19.7296 48.3141 14.7647 33.8985 14.7647C32.7065 14.7647 31.5346 14.7986 30.3879 14.8663C29.9041 11.9461 29.6747 8.74662 29.463 5.73325C29.3395 4.00647 29.2211 2.33906 29.0623 0.823975C28.901 2.33906 28.7826 4.00658 28.6616 5.73325C28.4424 8.81856 28.208 12.1027 27.6989 15.0821C19.3143 15.9455 12.5149 18.5314 9.49041 21.9087C14.0293 19.9365 20.1434 18.7007 26.8925 18.6246C26.5144 19.8858 26.0482 21.0242 25.4635 21.9892C23.15 25.815 19.1712 27.6689 15.6253 28.3545Z"
+          fill="url(#paint0_linear_169_21)" />
+        <defs>
+          <linearGradient id="paint0_linear_169_21" x1="30" y1="0.823975" x2="30" y2="86.4169"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FE56CC" />
+            <stop offset="0.898333" stop-color="#2400C4" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <h1 class="text-white text-center lora fw-semibold fs-1"><span class="gradient-sirius"
+        data-text="Alguns">Alguns</span> robôs ganham.</h1>
+    <h1 class="text-white text-center lora fw-semibold fs-1">Outros <span class="gradient-sirius"
+        data-text="perdem">perdem</span>.</h1>
+    <h1 class="text-white text-center lora fw-semibold fs-1 gradient-sirius"><span class="gradient-sirius"
+        data-text="Sirius">Sirius</span> redefine o jogo.</h1>
+  </div>
+
+  <main class="bg-content container-fluid p-5">
+  <div class="container-fluid bg-white rounded-4" id="ourAtts">
+    <section class="container-fluid p-5 pt-4">
+      <h5 class="w-75 mb-5 bd-purple border-top fs-6 text-light-purple albert fw-semibold pt-2">
+        GALERIA DO ROBÔ
+      </h5>
+
+      <!-- carrossel -->
+      <div id="attCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators gap-2 bn-p z-3">
+          <button type="button" data-bs-target="#attCarousel" data-bs-slide-to="0" class=" active rounded-circle"
+            aria-current="true" aria-label="Slide 1" style="width: 12px; height: 12px;"></button>
+          <button type="button" data-bs-target="#attCarousel" data-bs-slide-to="1" class="rounded-circle"
+            aria-label="Slide 2" style="width: 12px; height: 12px;"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <!-- SLIDE 1 -->
+          <div class="carousel-item active">
+            <article class="row gx-4 gy-4">
+              <!-- Card 1 -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="bg-light-gray p-0 rounded-4 h-100">
+                  <figure class="figure m-2">
+                    <img class="figure-img img-fluid rounded-3 img-card" src="./img/imagem1.png" alt="">
+                    <figcaption class="figure-caption text-purple lora d-flex justify-content-between ps-2">
+                      ATUALIZAÇÃO <span class="pe-2">00/00/00</span>
+                    </figcaption>
+                  </figure>
+                  <h2 class="text-black fs-4 m-2 fw-semibold lora">Arma Cinética Adaptativa</h2>
+                  <p class="text-black fs-6 fw-normal mx-2 albert mb-5">
+                    A antena elétrica vai além do comum. Com vibração, flexibilidade e alcance vertical, ela se adapta à
+                    movimentação do adversário. Ideal para estourar bexigas em posições imprevisíveis. Um ataque que
+                    aprende a cada duelo.
+                  </p>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="bg-light-gray p-0 rounded-4 h-100">
+                  <figure class="figure m-2">
+                    <img class="figure-img img-fluid rounded-3 img-card" src="./img/imagem2.png" alt="">
+                    <figcaption class="figure-caption text-purple lora d-flex justify-content-between ps-2">
+                      ATUALIZAÇÃO <span class="pe-2">18/05/2025</span>
+                    </figcaption>
+                  </figure>
+                  <h2 class="text-black fs-4 m-2 fw-semibold lora">Intimidador por Natureza</h2>
+                  <p class="text-black fs-6 fw-normal mx-2 albert mb-5">
+                    O design não é só técnico — é psicológico. Linhas agressivas, estrutura imponente e movimentos
+                    marcantes. Ele não entra apenas para vencer: entra para dominar. O oponente sente a pressão antes
+                    mesmo do primeiro golpe.
+                  </p>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="bg-light-gray p-0 rounded-4 h-100">
+                  <figure class="figure m-2">
+                    <img class="figure-img img-fluid rounded-3 img-card" src="./img/imagem3.png" alt="">
+                    <figcaption class="figure-caption text-purple lora d-flex justify-content-between ps-2">
+                      ATUALIZAÇÃO <span class="pe-2">18/05/2025</span>
+                    </figcaption>
+                  </figure>
+                  <h2 class="text-black fs-4 m-2 fw-semibold lora">Blindagem Modular</h2>
+                  <p class="text-black fs-6 fw-normal mx-2 albert mb-5">
+                    Sua proteção foi pensada para a arena. Com camadas removíveis e pontos de reforço nas regiões
+                    críticas, a blindagem se adapta ao estilo de combate e protege o que realmente importa: o sistema
+                    vital e a bexiga.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- SLIDE 2 -->
+          <div class="carousel-item">
+            <article class="row gx-4 gy-4">
+              <!-- Card 1 -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="bg-light-gray p-0 rounded-4 h-100">
+                  <figure class="figure m-2">
+                    <img class="figure-img img-fluid rounded-3 img-card" src="./img/imagem4.png" alt="">
+                    <figcaption class="figure-caption text-purple lora d-flex justify-content-between ps-2">
+                      ATUALIZAÇÃO <span class="pe-2">18/05/2025</span>
+                    </figcaption>
+                  </figure>
+                  <h2 class="text-black fs-4 m-2 fw-semibold lora">Postura de Guerra</h2>
+                  <p class="text-black fs-6 fw-normal mx-2 albert mb-5">
+                    Com uma base firme, centro de gravidade equilibrado e estabilidade mesmo em impactos intensos, o
+                    robô mantém postura e mobilidade mesmo sob ataque. Ele nunca perde o chão.
+                  </p>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="bg-light-gray p-0 rounded-4 h-100">
+                  <figure class="figure m-2 ">
+                    <img class="figure-img img-fluid rounded-3 img-card" src="./img/imagem5.png" alt="">
+                    <figcaption class="figure-caption text-purple lora d-flex justify-content-between ps-2">
+                      ATUALIZAÇÃO <span class="pe-2">18/05/2025</span>
+                    </figcaption>
+                  </figure>
+                  <h2 class="text-black fs-4 m-2 fw-semibold lora">Visão Estratégica</h2>
+                  <p class="text-black fs-6 fw-normal mx-2 albert mb-5">
+                    Equipado com sensores e lógica de movimentação inteligente, o robô interpreta o campo de batalha em
+                    tempo real. Cada movimento é parte de um plano — atacar, recuar, reposicionar. Ele enxerga antes de
+                    agir.
+                  </p>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="bg-light-gray p-0 rounded-4 h-100">
+                  <figure class="figure m-2 ">
+                    <img class="figure-img img-fluid rounded-3 img-card" src="./img/imagem6.jpg" alt="">
+                    <figcaption class="figure-caption text-purple lora d-flex justify-content-between ps-2">
+                      ATUALIZAÇÃO <span class="pe-2">18/05/2025</span>
+                    </figcaption>
+                  </figure>
+                  <h2 class="text-black fs-4 m-2 fw-semibold lora">Atualizações Constantes</h2>
+                  <p class="text-black fs-6 fw-normal mx-2 albert mb-5">
+                    Projeto vivo e em evolução. O robô está em constante melhoria: ajustes no software, upgrade de
+                    componentes e testes de campo garantem que ele nunca entre igual na próxima batalha. Sempre mais forte. Sempre um passo à frente.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+
+<section class="container-fluid p-5 pt-4">
+  <h5 class="w-75 mb-5 bd-purple border-top fs-6 text-light-purple albert fw-semibold pt-2">
+    INTEGRANTES DO GRUPO
+  </h5>
+
+  <div class="row gx-4 gy-4 justify-content-center">
+    <!-- Integrante 1 -->
+    <div class="col-12 col-md-6 col-lg-4 d-flex">
+      <div class="bg-light-gray p-0 rounded-4 h-100 d-flex flex-column bg-dark">
+        <figure class="figure m-2">
+          <div class="ratio ratio-1x1 rounded-3 overflow-hidden">
+            <img src="./img/Thiago.jpg" alt="Integrante 1" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%; border-radius: 0.75rem;" />
+          </div>
+          <figcaption class="figure-caption text-purple lora ps-2 mt-2">
+            Thiago Mendes
+          </figcaption>
+        </figure>
+        <h2 class="text-white fs-5 m-2 fw-semibold lora">Função: Construtor</h2>
+        <p class="text-white fs-6 fw-normal mx-2 albert mb-4">
+         Monta e integra os componentes físicos do robô, garantindo que a estrutura funcione de forma eficiente e esteja alinhada com os objetivos técnicos do projeto.
+        </p>
+      </div>
+    </div>
+
+    <!-- Integrante 2 -->
+    <div class="col-12 col-md-6 col-lg-4 d-flex">
+      <div class="bg-light-gray p-0 rounded-4 h-100 d-flex flex-column bg-dark">
+        <figure class="figure m-2">
+          <div class="ratio ratio-1x1 rounded-3 overflow-hidden">
+            <img src="./img/Alice.jpg" alt="Integrante 2" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%; border-radius: 0.75rem;" />
+          </div>
+          <figcaption class="figure-caption text-purple lora ps-2 mt-2">
+            Alice Galdino
+          </figcaption>
+        </figure>
+        <h2 class="text-white fs-5 m-2 fw-semibold lora">Função: Pesquisadora Técnica</h2>
+        <p class="text-white fs-6 fw-normal mx-2 albert mb-4">
+          Realiza pesquisas sobre tecnologias envolvidas no projeto e coleta dados relevantes para embasar decisões técnicas.
+        </p>
+      </div>
+    </div>
+
+    <!-- Integrante 3 -->
+    <div class="col-12 col-md-6 col-lg-4 d-flex">
+      <div class="bg-light-gray p-0 rounded-4 h-100 d-flex flex-column bg-dark">
+        <figure class="figure m-2">
+          <div class="ratio ratio-1x1 rounded-3 overflow-hidden">
+            <img src="./img/Dhiego.jpg" alt="Integrante 3" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%; border-radius: 0.75rem;" />
+          </div>
+          <figcaption class="figure-caption text-purple lora ps-2 mt-2">
+            Dhiego Ferreira
+          </figcaption>
+        </figure>
+        <h2 class="text-white fs-5 m-2 fw-semibold lora">Função: Desenvolvedor</h2>
+        <p class="text-white fs-6 fw-normal mx-2 albert mb-4">
+          Responsável pela implementação do projeto, testando e otimizando as funcionalidades.
+        </p>
+      </div>
+    </div>
+
+    <!-- Integrante 4 -->
+    <div class="col-12 col-md-6 col-lg-4 d-flex">
+      <div class="bg-light-gray p-0 rounded-4 h-100 d-flex flex-column bg-dark">
+        <figure class="figure m-2">
+          <div class="ratio ratio-1x1 rounded-3 overflow-hidden">
+            <img src="./img/Maria Clara.jpg" alt="Integrante 4" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%; border-radius: 0.75rem;" />
+          </div>
+          <figcaption class="figure-caption text-purple lora ps-2 mt-2">
+            Maria Clara
+          </figcaption>
+        </figure>
+        <h2 class="text-white fs-5 m-2 fw-semibold lora">Função: Designer</h2>
+        <p class="text-white fs-6 fw-normal mx-2 albert mb-4">
+          Cria os elementos visuais do projeto, garantindo usabilidade e estética alinhadas com os objetivos do grupo.
+        </p>
+      </div>
+    </div>
+
+    <!-- Integrante 5 -->
+    <div class="col-12 col-md-6 col-lg-4 d-flex ">
+      <div class="bg-light-gray p-0 rounded-4 h-100 d-flex flex-column bg-dark">
+        <figure class="figure m-2 ">
+          <div class="ratio ratio-1x1 rounded-3 overflow-hidden">
+            <img src="./img/Pedro.png" alt="Integrante 5" class="img-fluid" style="object-fit: cover; width: 100%; height: 100%; border-radius: 0.75rem;" />
+          </div>
+          <figcaption class="figure-caption text-purple lora ps-2 mt-2">
+            Pedro Ribeiro
+          </figcaption>
+        </figure>
+        <h2 class="text-white fs-5 m-2 fw-semibold lora">Função: Analista de Dados</h2>
+        <p class="text-white fs-6 fw-normal mx-2 albert mb-4">
+          Analisa os dados coletados para extrair insights que auxiliam na tomada de decisões estratégicas do projeto.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <section class="bg-white container-fluid rounded-4 my-5" id="becomeMember">
+      <div class="container pt-4 d-flex justify-content-center">
+        <h5 class="w-100 mb-5 bd-purple border-top fs-6 text-light-purple albert fw-semibold pt-2">TORNE-SE SÓCIO</h5>
+      </div>
+      <article class="container">
+        <h1 class="lora fw-normal fs-1 text-center text-wrap mb-5">Deixe seus dados para entrarmos em contato!</h1>
+        <form id="dados" name="dados" method="post" action="" class="row g-4 px-md-5">
+
+          <div class="col-md-6">
+            <label for="nome" class="lora fs-6 form-label">Nome *</label>
+            <input type="text" id="nome" name="nome" placeholder="José" required class="form-control rounded-5 ps-3">
+          </div>
+
+          <div class="col-md-6">
+            <label for="sobrenome" class="lora fs-6 form-label">Sobrenome *</label>
+            <input type="text" id="sobrenome" name="sobrenome" placeholder="Silva" required
+              class="form-control rounded-5 ps-3">
+          </div>
+
+          <div class="col-md-6">
+            <label for="email" class="lora fs-6 form-label">E-mail *</label>
+            <input type="email" id="email" name="email" placeholder="nome@exemplo.com" maxlength="50" required
+              class="form-control rounded-5 ps-3">
+          </div>
+
+          <div class="col-md-6">
+            <label for="tel" class="lora fs-6 form-label">Telefone *</label>
+            <input type="tel" id="tel" name="tel" placeholder="(xx) xxxxx-xxxx" required
+              class="form-control rounded-5 ps-3">
+          </div>
+
+          <div class="col-12">
+            <label for="message" class="lora form-label">Mensagem</label>
+            <textarea name="message" id="message" class="form-control rounded-4 pt-2 pb-5" rows="5"></textarea>
+          </div>
+
+          <div class="col-12 form-text mt-2">
+            <p>Campos obrigatórios*</p>
+            <p>A Sirius está comprometida em proteger e respeitar sua privacidade, e usaremos suas informações pessoais
+              somente para entrarmos em contato e fornecer nossos produtos e serviços que solicitar. Se você consentir
+              que entremos em contato com você para essa finalidade, marque abaixo para dizer que gostaria que
+              entrássemos em contato com você:</p>
+          </div>
+
+          <div class="col-12 form-text">
+            <div class="mb-4 form-check">
+              <input type="checkbox" id="legalConsent" name="legalConsent"
+                value="Eu concordo em receber outras comunicações de Sirius." class="form-check-input">
+              <label for="legalConsent" class="form-check-label lora">Eu concordo em receber comunicações de
+                Sirius.</label>
+            </div>
+            <p>Você pode cancelar a assinatura dessas comunicações a qualquer momento. Para obter mais informações sobre
+              como cancelar a assinatura, nossas práticas de privacidade e como estamos comprometidos em proteger e
+              respeitar sua privacidade, revise nossa Política de Privacidade. Ao clicar em enviar abaixo, você consente
+              em permitir que a Sirius armazene e processe as informações pessoais enviadas acima.</p>
+          </div>
+
+          <div class="col-12 text-center mb-5">
+            <button class="btn btn-pink btn-plus border rounded-5 fw-semibold px-4 mt-4 albert fs-6">
+              ENVIAR
+              <svg class="ms-2" width="17" height="17" viewBox="0 0 22 22" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.0534 1.2345C12.0534 0.552952 11.4948 -1.13372e-05 10.8065 -1.13372e-05C10.1181 -1.13372e-05 9.55955 0.552952 9.55955 1.2345V9.46459H1.2469C0.558511 9.46459 0 10.0175 0 10.6991C0 11.3806 0.558511 11.9336 1.2469 11.9336H9.55955V20.1637C9.55955 20.8452 10.1181 21.3982 10.8065 21.3982C11.4948 21.3982 12.0534 20.8452 12.0534 20.1637V11.9336H20.366C21.0544 11.9336 21.6129 11.3806 21.6129 10.6991C21.6129 10.0175 21.0544 9.46459 20.366 9.46459H12.0534V1.2345Z"
+                  fill="currentcolor" />
+              </svg>
+            </button>
+          </div>
+
+        </form>
+      </article>
+    </section>
+  </main>
+
+
+  <footer class="card-footer mt-4">
+    <ul class="ps-0 text-center">
+      <li class="list-unstyled mb-4 d-flex justify-content-center gap-4 flex-wrap">
+        <a href="#ourRobot"
+          class="link fw-medium link-underline link-underline-opacity-0 contato-link text-white header-link">NOSSO
+          ROBÔ</a>
+        <a href="#ourWeapon"
+          class="link fw-medium link-underline link-underline-opacity-0 contato-link text-white header-link">NOSSA
+          ARMA</a>
+        <a href="#ourHardware"
+          class="link fw-medium link-underline link-underline-opacity-0 contato-link text-white header-link">NOSSO
+          HARDWARE</a>
+        <a href="#ourAtts"
+          class="link fw-medium link-underline link-underline-opacity-0 contato-link text-white header-link">NOVAS
+          ATUALIZAÇÕES</a>
+        <a href="#becomeMember"
+          class="link fw-medium link-underline link-underline-opacity-0 contato-link text-white header-link">TORNE-SE
+          SÓCIO</a>
+      </li>
+      <li class="list-unstyled mb-4">
+        <a href="#header"><svg width="125" height="90" viewBox="0 0 60 87" fill="none="
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M15.6253 28.3545C14.5794 28.5577 13.5713 28.7566 12.6565 29.019C13.3294 29.2137 14.0678 29.3956 14.844 29.5861C18.7024 30.5341 23.4956 31.7106 25.9931 35.8328C26.6181 36.8696 27.107 37.5765 27.49 39.8914C15.4358 38.8461 6.32797 34.051 6.32797 28.2997C6.32797 27.2332 6.63796 26.2048 7.22263 25.223C2.74679 27.2121 0 29.908 0 32.8748C0 38.9945 11.6859 43.9551 26.1015 43.9551C26.7441 43.9551 27.3792 43.9466 28.0067 43.9255C28.8535 52.4364 28.8535 64.6419 28.856 73.9573C28.856 79.7724 28.856 84.4616 29.0626 86.4169C29.2693 84.4616 29.2693 79.7723 29.2693 73.953C29.2693 64.6041 29.2693 52.3395 30.1261 43.8236C39.501 43.2057 47.2282 41.5595 50.5095 37.8943C45.8169 39.9342 39.4481 40.0993 32.43 40.0993C31.8176 40.0993 31.2078 40.0908 30.6054 40.0739C30.991 37.67 31.49 36.8955 32.1327 35.8332C34.6277 31.7111 39.4211 30.5346 43.2792 29.5865C44.0554 29.3961 44.7938 29.2141 45.4692 29.0194C44.5518 28.757 43.5438 28.5581 42.4979 28.355C38.952 27.6694 34.9727 25.8156 32.6591 21.9898C32.0921 21.0545 31.636 19.9541 31.2654 18.7395C43.932 19.552 53.672 24.4741 53.672 30.4243C53.672 31.4866 53.362 32.5193 52.7774 33.4969C57.2532 31.5078 60 28.8161 60 25.8451C60 19.7296 48.3141 14.7647 33.8985 14.7647C32.7065 14.7647 31.5346 14.7986 30.3879 14.8663C29.9041 11.9461 29.6747 8.74662 29.463 5.73325C29.3395 4.00647 29.2211 2.33906 29.0623 0.823975C28.901 2.33906 28.7826 4.00658 28.6616 5.73325C28.4424 8.81856 28.208 12.1027 27.6989 15.0821C19.3143 15.9455 12.5149 18.5314 9.49041 21.9087C14.0293 19.9365 20.1434 18.7007 26.8925 18.6246C26.5144 19.8858 26.0482 21.0242 25.4635 21.9892C23.15 25.815 19.1712 27.6689 15.6253 28.3545Z"
+              fill="url(#paint0_linear_169_21)" />
+            <defs>
+              <linearGradient id="paint0_linear_169_21" x1="30" y1="0.823975" x2="30" y2="86.4169"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FE56CC" />
+                <stop offset="0.898333" stop-color="#2400C4" />
+              </linearGradient>
+            </defs>
+          </svg> </a>
+      </li>
+      <li class="list-unstyled border border-2 border-top-0 border-start-0 border-end-0 pb-4 bd-purple">
+        <a href="#" class="img-hover"><img src="./img/icon_Insta.png" alt="Ícone do Instagram" class="img-fluid"></a>
+        <a href="#" class="img-hover"><img src="./img/icon_X.png" alt="Ícone do X (Antigo Twitter)"
+            class="img-fluid"></a>
+        <a href="#" class="img-hover"><img src="./img/icon_Linkedin.png" alt="Ícone do Linkedin" class="img-fluid"></a>
+      </li>
+    </ul>
+    <p class="text-center text-purple my-3">© Sirius 2024. Todos os direitos reservados.</p>
+  </footer>
+
+
+
+
+  <!-- Javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
